@@ -1,7 +1,11 @@
 import '../styles/globals.css'
-
+import ThemeConfig from "../theme";
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeConfig>
+      <Component {...pageProps} />
+    </ThemeConfig>
+  )
 }
 
 export default MyApp
